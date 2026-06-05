@@ -1,0 +1,281 @@
+# Instincts generated from https://github.com/Disseveru/Mcp-server
+# Generated: 2026-06-05T23:00:54.156Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Mcp-server-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Disseveru/Mcp-server
+---
+
+# Mcp Server Commit Length
+
+## Action
+
+Keep commit messages concise (~34 characters)
+
+## Evidence
+
+- Average commit message length: 34 chars
+- Based on 2 commits
+
+---
+id: Mcp-server-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Disseveru/Mcp-server
+---
+
+# Mcp Server Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Mcp-server-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Disseveru/Mcp-server
+---
+
+# Mcp Server Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Mcp-server-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Disseveru/Mcp-server
+---
+
+# Mcp Server Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Mcp-server-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Disseveru/Mcp-server
+---
+
+# Mcp Server Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: mcp-server-instinct-camelcase-files
+trigger: "When creating a new file in the src directory"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Camelcase Files
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+- src folder structure
+
+---
+id: mcp-server-instinct-camelcase-functions
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: mcp-server-instinct-pascalcase-classes
+trigger: "When declaring a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: mcp-server-instinct-screaming-constants
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: mcp-server-instinct-relative-imports
+trigger: "When importing modules within the project"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: mcp-server-instinct-named-exports
+trigger: "When exporting functions or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: mcp-server-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Test Location
+
+## Action
+
+Place test files in the separate 'test' directory, not alongside source files
+
+## Evidence
+
+- Pattern in folderStructure.testLocation
+- Presence of 'test' folder
+
+---
+id: mcp-server-instinct-commit-prefix-feat
+trigger: "When committing a new feature"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Commit Prefix Feat
+
+## Action
+
+Prefix the commit message with 'feat:'
+
+## Evidence
+
+- Seen in commit 'feat: scaffold monetized MCP TypeScript starter platform'
+- Pattern in commits.prefixes
+
+---
+id: mcp-server-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: Disseveru/Mcp-server
+---
+
+# Mcp Server Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 34 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+- Examples of short commit messages
+
