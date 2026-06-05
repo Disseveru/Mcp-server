@@ -1,0 +1,28 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "description": "AI agent marketplace for monetized MCP/x402 services, with Bazaar discovery and a 12-hour ecosystem scanner that identifies whitespace and adds high-demand, high-utility services for agent-to-agent use",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test test/**/*.test.ts",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Disseveru/Mcp-server.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Disseveru/Mcp-server/issues"
+  },
+  "homepage": "https://github.com/Disseveru/Mcp-server#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
